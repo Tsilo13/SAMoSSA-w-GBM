@@ -9,6 +9,13 @@ I chose to compare it to Geometric Brownian Motion, which seemed like a good ide
 If you want to use the code just install the environment and fill out which stock ticker and time you want to try. This code will then use the yfinance library to retrieve closing prices 
 and fill out the matrices using that. 
 
+The hyperparameters have to be adjusted in the code itself. 
+If you read the original paper, or you already know about AR and SVD, you'll find this straightforward.
+
+The windsow_length paramter adjusts the window size for the trajectory matric in single value decomposition. (if you dont know single value decomposotion it is worth learning. it's a very elegant bit of math)
+Changing the window length will change the ammount of time captured in each matrix, and will effect what patterns the machine picks up or doesn't. This is perhaps the most important param.
+
+
 Here is a link to the original paper, it is worth a read. 
 https://arxiv.org/pdf/2305.16491
 
